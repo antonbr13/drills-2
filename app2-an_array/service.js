@@ -102,12 +102,11 @@ var myData = [
 ];
 
 
+angular.module('arrayApp')
 
 
-
-
-
-
-
-
-
+.service('serviceTwo', function() {
+	this.getData = function() {
+		return myData;
+	}
+});
