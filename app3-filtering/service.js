@@ -1,10 +1,10 @@
-angular.module('myapp')
+angular.module('myApp')
 
 .service('filterService', function() {
 
-	this.data = function() {
+	this.getData = function() {
 		return myData;
-	};
+	}
 
 
 

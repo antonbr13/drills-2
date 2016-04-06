@@ -6,9 +6,9 @@
 
 
 
+<input type="text" ng-model="search" name="name" value="">
 
-
-			<div ng-repeat="person in employeeInfo" class="">
+			<div ng-repeat="person in employeeInfo | filter: search" class="">
 				{{person.name}}
 				<br>
 				{{person.email}}
