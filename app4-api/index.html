@@ -1,7 +1,31 @@
 <html ng-app="apiApp">
-	<body>
-		
-				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<head>
+	<link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+</head>
+	<body ng-controller="mainCtrl">
+
+		<h2>Star Wars Filmography</h2>
+
+		<div class="blocks" ng-repeat="film in films | orderBy: 'episode_id'">
+
+			<strong>Episode:</strong> <span ng-hide="hideEp">{{film.episode_id}}</span>	{{film.title}}<br>
+
+
+		</div>
+
+		<div ng-repeat="planet in planets">
+			<p>{{planet.name}}</p>
+		</div>
+
+
+
+
+
+
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>

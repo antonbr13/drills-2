@@ -1,6 +1,20 @@
-<html>
-	<body>
-		Something
+<html ng-app="app1">
+	<body ng-controller="mainCtrl">
+
+<input type="test" ng-model="search" name="name" value="">
+
+		<div class="" ng-repeat="employ in employees | filter: search">
+{{employ.name}}
+<br>
+{{employ.email}}
+
+<br><br>
+		</div>
+
+
+
+
+
 				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
