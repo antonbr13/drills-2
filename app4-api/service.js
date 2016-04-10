@@ -12,6 +12,7 @@ var baseUrl = 'http://pokeapi.co/api/v2/';
       })
       .then(function(response) {
          console.log(response.data.results);
+         return response;
 
       });
    };
